@@ -1,0 +1,6 @@
+.env
+chat.db
+__pycache__/
+venv/
+test_db.py
+.DS_Store
