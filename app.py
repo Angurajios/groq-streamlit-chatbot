@@ -8,7 +8,7 @@ from groq import Groq
 from db import init_db,create_conversation, get_conversations, get_messages,add_message,delete_conversation
 
 load_dotenv()
-api_key = os.getenv("Groq_api")
+api_key = os.getenv("Groq_api") or st.secrets.get("Groq_api")
 client = Groq(api_key=api_key)
 
 st.title("My Chatbot")
